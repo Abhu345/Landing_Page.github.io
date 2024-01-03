@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#nav h2{
+    height: 30px;
+    width: 30px;
+    border: 4px solid black;
+    border-radius: 50%;
+    border-bottom: 4px solid red;
+    animation: color 2s linear 0s infinite normal;
+
+}
+#nav h1{
+    position: absolute;
+    margin-left: 45px;
+}#nav h1::after{
+    content: ".";
+}
+@keyframes color{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#nav #part2{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#nav #part2 a{
+    padding: 40px;
+    text-decoration: none;
+    color: #222;;
+}
+#nav #part2 a:nth-last-child(1){
+    
+    padding: 10px 10px;
+    border-radius: 50px;
+    transition: margin-right 2s;
+}
+
+#nav #part2 a:nth-last-child(1):hover{
+    background-color: green;
+}
+#main>h2{
+    font-size: 4vw;
+    text-transform: capitalize;
+    margin-top: 15%;
+    margin-left: 7%;
+    width: 60%;
+    z-index: 99;
+    text-align: center;
+    position: relative;
+    color: black;
+}
+#main>h2::after{
+position: absolute;
+content: " ";
+width: 35%;
+height: 16px;
+background-image: url('https://thisisdigital.co.uk/dist/images/underline-green.svg');
+bottom: 0;
+left: 50%;
+background-size: cover;
+transform: translate(-50%,0);
+}
+#main .img1{
+position: absolute;
+left: 6%;
+top: 20%;
+height: 400px;
+width: 260px;
+}
+#main .img1:hover{
+box-shadow: 5px 5px 20px black;
+}
+#main .img2{
+    position: absolute;
+    right: 27%;
+    top: 18%;
+    height: 210px;
+    width: 230px;   
+}
+#main .img2:hover{
+    box-shadow: 5px 5px 20px black;
+    }
+#main .img3{
+        position: absolute;
+        right: 7%;
+        bottom: 6%;
+        height: 210px;
+        width: 200px;
+}
+#main .img3:hover{
+    box-shadow: 5px 5px 20px black;
+    }
+
